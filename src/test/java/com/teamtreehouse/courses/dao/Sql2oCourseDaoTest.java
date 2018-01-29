@@ -48,4 +48,9 @@ public class Sql2oCourseDaoTest {
 
     assertEquals(1, dao.findAll().size());
   }
+
+  @Test
+  public void noCoursesReturnsEmptyList() throws Exception {
+    assertEquals(0, dao.findAll().size());
+  }
 }
