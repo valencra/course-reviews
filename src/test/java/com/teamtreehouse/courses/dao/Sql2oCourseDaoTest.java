@@ -39,4 +39,13 @@ public class Sql2oCourseDaoTest {
 
     assertNotEquals(originalCourseId, course.getId());
   }
+
+  @Test
+  public void addedCoursesAreReturnedFromFindAll() throws Exception {
+    Course course = new Course("Test", "http://test.com");
+
+    dao.add(course);
+
+    assertEquals(1, dao.findAll().size());
+  }
 }
