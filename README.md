@@ -1,3 +1,3 @@
 # course-reviews
 
-Course reviews web app built with Spark and AngularJS
+Course reviews REST API built with Spark
