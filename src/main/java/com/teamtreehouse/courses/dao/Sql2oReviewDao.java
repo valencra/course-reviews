@@ -27,7 +27,6 @@ public class Sql2oReviewDao implements ReviewDao {
           .getKey();
       review.setId(id);
     } catch (Sql2oException exception) {
-      System.out.println(exception.getMessage());
       throw new DaoException(exception, "Problem adding review");
     }
   }
